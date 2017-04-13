@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Showcase | Attractive Pixel</title>
+    <meta name = "format-detection" content = "telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Attractive Pixel Official Webpage">
+    <meta name="author" content="Samson Samuels">
+
+    {% load staticfiles %}
+
+<link rel="icon" href="{% static 'officialSite/images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'officialSite/images/favicon.ico' %}" />
+<link href="{% static 'officialSite/images/atitleicon.png' %}" size="16x16" rel="icon" type="image/png">
+<link rel="stylesheet" href="{% static 'officialSite/css/style.css' %}">
+
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="{% static 'officialSite/js/jquery.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'officialSite/js/script.js' %}"></script>
+<script src="{% static 'officialSite/js/superfish.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'officialSite/js/tmStickUp.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.ui.totop.js' %}"></script>
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+ });
+
+</script>
+</head>
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+  <section id="stuck_container" style="background-color: white; opacity: 0.9">
+  <!--==============================
+        Stuck menu
+  =================================-->
+  <div class="container" >
+    <div class="row">
+    <div class="grid_12 " style="">
+      <h1 class="logo">
+      <a href="{% url 'officialSite:index' %}">
+        <img src="{% static 'officialSite/images/pnglogo.png' %}" alt="company logo" style="">
+      </a>
+      </h1>
+      <div class="navigation" style="">
+      <nav>
+        <ul class="sf-menu">
+         <li class=""><a href="{% url 'officialSite:index' %}">Home</a></li>
+         <li><a href="{% url 'officialSite:about' %}">About</a></li>
+         <li><a href="{% url 'officialSite:gallery' %}">Gallery</a></li>
+         <li class="current"><a href="{% url 'officialSite:clientshowcase' %}">Client Showcase</a></li>
+         <li><a href="{% url 'officialSite:contacts' %}">Contacts</a></li>
+       </ul>
+      </nav>
+      <div class="clear"></div>
+      </div>
+     <div class="clear"></div>
+    </div>
+   </div>
+  </div>
+  </section>
+</header>
+
+<section id="content" style="background-color: #f4f4f4"><div class="ic"></div>
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <h2 style="text-align: center">Client Showcase</h2></div>
+                 <div class="grid_2">
+        <!--<div class="box">-->
+          <a href="{% static 'officialSite/images/big2.jpg' %}" class="gall_item"><img src="{% static 'officialSite/images/animals.jpg' %}" alt=""><span></span></a>
+          <!--<div class="box_bot">-->
+            <!--<div class="box_bot_title">Weddings</div>-->
+            <!--<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit</p>-->
+            <!--<a href="#" class="btn">more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+      <div class="grid_2">
+        <!--<div class="box">-->
+          <a href="{% static 'officialSite/images/big3.jpg' %}" class="gall_item"><img src="{% static 'officialSite/images/animals.jpg' %}" alt=""><span></span></a>
+          <!--<div class="box_bot">-->
+            <!--<div class="box_bot_title">Family</div>-->
+            <!--<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit</p>-->
+            <!--<a href="#" class="btn">more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+      <div class="grid_2">
+        <!--<div class="box">-->
+          <a href="{% static 'officialSite/images/big4.jpg' %}" class="gall_item"><img src="{% static 'officialSite/images/animals.jpg' %}" alt=""><span></span></a>
+          <!--<div class="box_bot">-->
+            <!--<div class="box_bot_title">Kids</div>-->
+            <!--<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit</p>-->
+            <!--<a href="#" class="btn">more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+      <div class="grid_2">
+        <!--<div class="box">-->
+          <a href="{% static 'officialSite/images/big5.jpg' %}" class="gall_item"><img src="{% static 'officialSite/images/animals.jpg' %}" alt=""><span></span></a>
+          <!--<div class="box_bot">-->
+            <!--<div class="box_bot_title">Family</div>-->
+            <!--<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit</p>-->
+            <!--<a href="#" class="btn">more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+            <div class="grid_2">
+        <!--<div class="box">-->
+          <a href="{% static 'officialSite/images/big5.jpg' %}" class="gall_item"><img src="{% static 'officialSite/images/animals.jpg' %}" alt=""><span></span></a>
+          <!--<div class="box_bot">-->
+            <!--<div class="box_bot_title">Family</div>-->
+            <!--<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit</p>-->
+            <!--<a href="#" class="btn">more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+            <div class="grid_2">
+        <!--<div class="box">-->
+          <a href="{% static 'officialSite/images/big5.jpg' %}" class="gall_item"><img src="{% static 'officialSite/images/animals.jpg' %}" alt=""><span></span></a>
+          <!--<div class="box_bot">-->
+            <!--<div class="box_bot_title">Family</div>-->
+            <!--<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit</p>-->
+            <!--<a href="#" class="btn">more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+            <br><br><br><br>
+            <div><h5 style="text-align: center; font-size: large">Christ Merciful Ministries Anniversary 2016</h5></div>
+            <br>
+            <div class="grid_2">
+        <!--<div class="box">-->
+          <a href="{% static 'officialSite/images/big5.jpg' %}" class="gall_item"><img src="{% static 'officialSite/images/animals.jpg' %}" alt=""><span></span></a>
+          <!--<div class="box_bot">-->
+            <!--<div class="box_bot_title">Family</div>-->
+            <!--<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit</p>-->
+            <!--<a href="#" class="btn">more</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+    </div>
+    </div>
+</section>
+
+
+
+<!--==============================
+              footer
+=================================-->
+<footer id="footer" style="background-color: rgb(12, 12, 12)">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h2>Contacts</h2>
+        <div class="footer_phone">+234 (807) 761 2311</div>
+        <a href="mailto:info@attractivepixel.com" target="_blank" class="footer_mail">info@attractivepixel.com</a>
+        <!--<div class="sub-copy">Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>-->
+      </div>
+    </div>
+
+    <br><p style="font-size: 20px">Copyright &copy; Attractive Pixel Inc. 2017</p>
+  </div>
+</footer>
+</body>
+</html>

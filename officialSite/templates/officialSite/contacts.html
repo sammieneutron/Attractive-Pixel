@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts | Attractive Pixel</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Attractive Pixel Official Webpage">
+<meta name="author" content="Samson Samuels">
+
+{% load staticfiles %}
+
+<link rel="icon" href="{% static 'officialSite/images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'officialSite/images/favicon.ico' %}" />
+<link href="{% static 'officialSite/images/atitleicon.png' %}" size="16x16" rel="icon" type="image/png">
+<link rel="stylesheet" href="{% static 'officialSite/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'officialSite/css/style.css' %}">
+
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+<script src="{% static 'officialSite/js/jquery.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'officialSite/js/script.js' %}"></script>
+<script src="{% static 'officialSite/js/superfish.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'officialSite/js/tmStickUp.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.ui.totop.js' %}"></script>
+<script src="{% static 'officialSite/js/TMForm.js' %}"></script>
+<script src="{% static 'officialSite/js/modal.js' %}"></script>
+
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="{% static 'officialSite/js/html5shiv.js' %}"></script>
+<link rel="stylesheet" media="screen" href="{% static 'officialSite/css/ie.css' %}">
+<![endif]-->
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+  <!-- <div class="header_top"> -->
+  <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--<div class="grid_12">-->
+<!--&lt;!&ndash;            <img src="images/LOGO.png" alt="logo" style="width: 30%; padding-top: 2%;">&ndash;&gt;-->
+<!--&lt;!&ndash;      <h1><a href="#">Attractive Pixel <br></a></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;      Freezing Moments...&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!-- </div> -->
+  <section id="stuck_container" style="background-color: white; opacity: 0.9">
+  <!--==============================
+        Stuck menu
+  =================================-->
+  <div class="container" >
+    <div class="row">
+    <div class="grid_12 " style="">
+      <h1 class="logo">
+      <a href="{% url 'officialSite:index' %}">
+        <img src="{% static 'officialSite/images/pnglogo.png' %}" alt="company logo" style="">
+      </a>
+      </h1>
+      <div class="navigation" style="">
+      <nav>
+        <ul class="sf-menu">
+         <li class=""><a href="{% url 'officialSite:index' %}">Home</a></li>
+         <li><a href="{% url 'officialSite:about' %}">About</a></li>
+         <li><a href="{% url 'officialSite:gallery' %}">Gallery</a></li>
+         <li><a href="{% url 'officialSite:clientshowcase' %}">Client Showcase</a></li>
+         <li class="current"><a href="{% url 'officialSite:contacts' %}">Contacts</a></li>
+       </ul>
+      </nav>
+      <div class="clear"></div>
+      </div>       
+     <div class="clear"></div>  
+    </div>
+   </div> 
+  </div> 
+  </section>
+</header>
+<!--=====================
+          Content
+======================-->
+<section id="content" style="background-color: #f4f4f4"><div class="ic"></div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h2>Contacts</h2>
+        <div class="map">
+          <figure class="">
+            <iframe src="http://maps.google.com/?ll=6.520077%2C3.373275&amp;spn=0.085958%2C0.240326&amp;ie=UTF8&amp;z=12&amp;t=roadmap&amp;sll=6.520077%2C3.373275&amp;sspn=0.085958%2C0.240326&amp;q=Hussey%20Rd%2C%20Lagos%2C%20Nigeria%20(Hussey%20Rd)&amp;output=embed" title="Hussey Rd"></iframe>
+          </figure>
+        </div>
+      </div>
+      <div class="grid_5">
+          <h2>Contact Info</h2>
+          <div class="text1 tx__1">You can get in touch with us through the information below.</div>
+        <!--<p>All <a href="http://www.templatemonster.com/ " rel="nofollow" class="color1"><strong>premium website themes</strong></a> go with 24/7 support.</p>-->
+        <!--<p>If you have any questions regarding customization of <a href="http://blog.templatemonster.com/free-website-templates/" rel="nofollow" class="color1"><strong>freebies</strong></a>, ask guys from <a href="http://www.templatetuning.com/" rel="nofollow" class="color1"><strong>TemplateTuning</strong></a> to help you.</p>-->
+        <strong>Attractive Pixel Inc.</strong> <br>
+        2nd Floor, Hussey Plaza,<br>
+        No. 1 Hussey Street. Yaba, Lagos,<br>
+          100252.<br>
+        <strong>Telephone:</strong> +234 (807) 761 2311<br>
+        <strong>E-mail:</strong> info@attractivepixel.com
+
+          <div>
+            <h2>Follow Us</h2>
+            <ul class="socials">
+              <li style="display: inline"><a href="http://www.facebook.com/attractivepixel" target="_blank"><div class="fa fa-facebook"></div></a></li>
+              <li style="display: inline"><a href="http://www.twitter.com/attractivepixel" target="_blank"><div class="fa fa-twitter"></div></a></li>
+              <li style="display: inline"><a href="http://www.instagram.com/attractivepixel" target="_blank"><div class="fa fa-instagram"></div></a></li>
+                <li style="display: inline"><a href="http://www.plus.google.com/attractivepixel" target="_blank"><div class="fa fa-google-plus"></div></a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="grid_6 preffix_1">
+          <h2>Contact  Form</h2>
+          <form action="{% static 'officialSite/mail/form-handler.php' %}" method="post" role="form" id="contact-form">
+              <div class="contact-form-loader"></div>
+              <fieldset>
+                  <label class="name">
+                      <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid name.</span>
+                  </label>
+                   
+                  <label class="email">
+                      <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid email.</span>
+                  </label>
+                  <label class="phone">
+                      <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid phone.</span>
+                  </label>
+                   
+                  <label class="message">
+                      <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*The message is too short.</span>
+                  </label>
+                  <div class="ta__right">
+                      <a href="#" class="btn" data-type="reset">clear</a>
+                      <a href="#" class="btn" data-type="submit">send</a>
+                  </div>
+              </fieldset>
+                  <div class="modal fade response-message">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                          You message has been sent! We will be in touch soon.
+                        </div>      
+                      </div>
+                    </div>
+                  </div>
+          </form>
+          <!--<div class="grid_4">-->
+		    <!--<h3>Follow Us</h3>-->
+		    <!--<ul class="socials">-->
+		        <!--<li>-->
+			        <!--<div class="fa fa-facebook"></div>-->
+			        <!--<a href="http://www.facebook.com/attractivepixel" target="_blank">Be a fan on Facebook</a>-->
+		        <!--</li>-->
+		        <!--<li>-->
+			        <!--<div class="fa fa-twitter"></div>-->
+			        <!--<a href="http://www.twitter.com/attractivepixel" target="_blank">Follow us on Twitter</a>-->
+		        <!--</li>-->
+                <!--<li>-->
+			        <!--<div class="fa fa-instagram"></div>-->
+			        <!--<a href="www.instagram.com/attractivepixel" target="_blank">Follow us on Instagram</a>-->
+		        <!--</li>-->
+		        <!--<li>-->
+			        <!--<div class="fa fa-google-plus"></div>-->
+			        <!--<a href="#">Follow us on Google+</a>-->
+		        <!--</li>-->
+		    <!--</ul>-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer" style="background-color: rgb(12, 12, 12)">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <h2>Contacts</h2>
+        <div class="footer_phone">+234 (807) 761 2311</div>
+        <a href="mailto:info@attractivepixel.com" class="footer_mail">info@attractivepixel.com</a>
+        <!--<div class="sub-copy">Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>-->
+      </div>
+    </div>
+    <br><p style="font-size: 20px">Copyright &copy; Attractive Pixel Inc. 2017</p>
+  </div>  
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+</body>
+</html>
+

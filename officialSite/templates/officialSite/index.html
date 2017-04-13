@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Official Attractive Pixel</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Attractive Pixel Official Webpage">
+<meta name="author" content="Samson Samuels">
+
+{% load staticfiles %}
+
+<link rel="icon" href="{% static 'officialSite/images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'officialSite/images/favicon.ico' %}" />
+<link href="{% static 'officialSite/images/atitleicon.png' %}" size="16x16" rel="icon" type="image/png">
+
+<link rel="stylesheet" href="{% static 'officialSite/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'officialSite/css/font-awesome.css' %}">
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+<!--jQuery scripts-->
+<script src="{% static 'officialSite/js/jquery.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'officialSite/js/script.js' %}"></script>
+<script src="{% static 'officialSite/js/superfish.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'officialSite/js/tmStickUp.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.ui.totop.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.shuffle-images.js' %}"></script>
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+
+ $(document).ready(function(){
+	   $(".shuffle-me").shuffleImages({
+		 target: ".images > img"
+	   });
+	});
+
+</script>
+
+  <link rel="stylesheet" href="{% static 'officialSite/css/newcarousel.css' %}">
+  <script src="{% static 'officialSite/bootstrap/js/bootstrap.min.js' %}"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  </style>
+
+
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+	 <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="{% static 'officialSite/js/html5shiv.js' %}"></script>
+<link rel="stylesheet" media="screen" href="{% static 'officialSite/css/ie.css' %}">
+<![endif]-->
+</head>
+
+<body class="page1" id="top">
+<!--==============================
+			  header
+=================================-->
+<header>
+   <!--<div class="header_top">-->
+    <div class="container" style="width: auto">
+	    <!--div class="row">-->
+            <!--<div class="grid_12"><-->
+                <!--<br>-->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="{% static 'officialSite/images/slider.jpg' %}" alt="" width="100%">
+                  </div>
+
+                  <div class="item">
+                    <img src="{% static 'officialSite/images/slider.jpg' %}" alt="" width="100%">
+                  </div>
+
+                  <div class="item">
+                    <img src="{% static 'officialSite/images/slider.jpg' %}" alt="" width="100%">
+                  </div>
+
+                  <div class="item">
+                    <img src="{% static 'officialSite/images/slider.jpg' %}" alt="" width="100%">
+                  </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+	   <!--<div class="row">-->
+		 <!--<div class="grid_12">-->
+            <!--&lt;!&ndash;<img src="images/LOGO.png" alt="" style="width: 30%; padding-top: 2%;">&ndash;&gt;-->
+		  <!--<h1>Attractive Pixel</h1>-->
+		  <!--Not just photographs, but life.-->
+		 <!--</div>-->
+	   <!--</div>-->
+
+  <section id="stuck_container" style="background-color: white; opacity: 0.9">
+  <!--==============================
+			  Stuck menu
+  =================================-->
+	<div class="container">
+	  <div class="row">
+		<div class="grid_12 " style="">
+		  <h1 class="logo">
+			<a href="{% url 'officialSite:index' %}">
+			  <img src="{% static 'officialSite/images/pnglogo.png' %}" alt="company logo" style="">
+			</a>
+		  </h1>
+		  <div class="navigation" style="">
+			<nav>
+			  <ul class="sf-menu">
+			   <li style="" class="current"><a href="{% url 'officialSite:index' %}">Home</a></li>
+			   <li style=""><a href="{% url 'officialSite:about' %}">About</a></li>
+			   <li><a href="{% url 'officialSite:gallery' %}">Gallery</a></li>
+			   <li><a href="{% url 'officialSite:clientshowcase' %}">Client Showcase</a></li>
+			   <li><a href="{% url 'officialSite:contacts' %}">Contacts</a></li>
+			 </ul>
+			</nav>
+			<div class="clear"></div>
+		  </div>
+		 <div class="clear"></div>
+		</div>
+	 </div>
+	</div>
+  </section>
+</header>
+
+<!--====================
+    Slider
+======================-->
+
+<!--=====================
+		  Content
+======================-->
+<section id="content" style="background-color: #f4f4f4;"><div class="ic"></div>
+  <div class="container">
+	<div class="row">
+	  <div class="grid_12">
+		<h2 class="ta__center">Recent Photos</h2>
+		<div class="shuffle-group">
+		  <div class="row">
+			<div class="grid_8">
+			  <div data-si-mousemove-trigger="100"  class="shuffle-me offset__1">
+				<a href="{% url 'officialSite:gallery' %}" class="info" target="_blank"></a>
+				<div class="images">
+				  <img src="{% static 'officialSite/images/img/Choir-mid.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/img/Females-mid.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/img/smiile.jpg' %}" alt="">
+				</div>
+			  </div>
+			</div>
+			<div class="grid_4">
+			  <div data-si-mousemove-trigger="100" class="shuffle-me">
+				<a href="{% url 'officialSite:gallery' %}" class="info" target="_blank"></a>
+				<div class="images">
+				  <img src="{% static 'officialSite/images/img/Men-mid.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_2-1.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_2-2.jpg' %}" alt="">
+				</div>
+			  </div>
+			  <div data-si-mousemove-trigger="100" class="shuffle-me offset__1">
+				<a href="{% url 'officialSite:gallery' %}" class="info" target="_blank"></a>
+				<div class="images">
+				  <img src="{% static 'officialSite/images/img/oyin.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_3-1.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_3-2.jpg' %}" alt="">
+				</div>
+			  </div>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_4">
+			  <div data-si-mousemove-trigger="100" class="shuffle-me">
+				<a href="{% url 'officialSite:gallery' %}" class="info" target="_blank"></a>
+				<div class="images">
+				  <img src="{% static 'officialSite/images/gall_4.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_4-1.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_4-2.jpg' %}" alt="">
+				</div>
+			  </div>
+			  <div data-si-mousemove-trigger="100" class="shuffle-me">
+				<a href="{% url 'officialSite:gallery' %}" class="info" target="_blank"></a>
+				<div class="images">
+				  <img src="{% static 'officialSite/images/gall_5.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_5-1.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/gall_5-2.jpg' %}" alt="">
+				</div>
+			  </div>
+			</div>
+			<div class="grid_8">
+			  <div data-si-mousemove-trigger="100"  class="shuffle-me">
+				<a href="{% url 'officialSite:gallery' %}" class="info" target="_blank"></a>
+				<div class="images">
+				  <img src="{% static 'officialSite/images/img/smile.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/img/Females-mid.jpg' %}" alt="">
+				  <img src="{% static 'officialSite/images/img/Choir-mid.jpg' %}" alt="">
+				</div>
+			  </div>
+			</div>
+			</div>
+		  </div>
+	  </div>
+	</div>
+  </div>
+  <div class="sep-1"></div>
+  <div class="container">
+	<div class="row">
+	  <div class="grid_8">
+		<h3>Bio</h3>
+		<img src="{% static 'officialSite/images/img/Bio-mid-mid.jpg' %}" alt="" class="img_inner fleft noresize">
+		<div class="extra_wrapper"><p class="offset__1">Attractive Pixel Inc. was founded in August, 2016 by Samson
+		Samuels, a Computer Science & Education graduate of University of Nigeria, Nsukka.
+		He is someone who is crazily interested in computers and technology and has vowed to be part of the future
+		software developers in which has led him into programming and web developing.
+		His passion for photography ignited when he realized all his life has been about photographs since childhood.</p></div>
+		<div class="clear"></div>
+		<p>Find detailed information about our <a href="{% url 'officialSite:clientshowcase' %}" target="_blank" rel="nofollow"><strong>clients</strong></a> here. </p>
+		<p>To view our beautiful and excellent works, check our <a href="{% url 'officialSite:gallery' %}" rel="nofollow"><strong>gallery</strong></a>.</p>
+		  <p>To know more about the company, click on the link below.</p> <br>
+		<a href="{% url 'officialSite:about' %}" class="btn" target="_blank">more</a>
+	  </div>
+	  <div class="grid_4">
+		<h3>Follow Us</h3>
+		<ul class="socials">
+		  <li>
+			<a href="http://www.facebook.com/attractivepixel" target="_blank"><div class="fa fa-facebook"></div>
+			Be a fan on Facebook</a>
+		  </li>
+		  <li>
+			<a href="http://www.twitter.com/attractivepixel" target="_blank"><div class="fa fa-twitter"></div>
+			Follow us on Twitter</a>
+		  </li>
+          <li>
+			<a href="http://www.instagram.com/attractivepixel" target="_blank"><div class="fa fa-instagram"></div>
+			Follow us on Instagram</a>
+		  </li>
+		  <li>
+			<a href="http://www.plus.google.com/attractivepixel" target="_blank">
+                <div class="fa fa-google-plus"></div>Follow us on Google+
+			</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+  <!--<div class="sep-1"></div>-->
+  <!--<div class="container">-->
+	<!--<div class="row">-->
+	  <!--<div class="grid_7">-->
+		<!--<h3 class="head__1">From our clients</h3>-->
+		<!--<time class="time-1" datetime="2014-01-01">24.07 <br> 2014</time><p class="offset__2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a scelerisque eros convallis accumsan. Maecenas vehicula egestas  derto venenatis. Duis </p>-->
+		<!--Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis. <br>-->
+		<!--<a href="#" class="btn">more</a>-->
+	  <!--</div>-->
+	  <!--<div class="grid_4 preffix_1">-->
+		<!--<h3 class="head__1">Testimonials</h3>-->
+		<!--<blockquote class="bq_1">-->
+		  <!--<img src="{% static 'officialSite/images/page1_img2.jpg' %}" alt="" class="img_inner fleft noresize">-->
+		  <!--<div class="extra_wrapper">-->
+			<!--<div class="bq_title">Lize Jons</div>-->
+		  <!--</div>-->
+		  <!--<div class="clear"></div>-->
+		  <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor...-->
+		  <!--<br>-->
+		  <!--<a href="#" class="btn">more</a>-->
+		<!--</blockquote>-->
+	  <!--</div>-->
+	<!--</div>-->
+  <!--</div>-->
+</section>
+<!--==============================
+			  footer
+=================================-->
+<footer id="footer" style="background-color: rgb(12, 12, 12)">
+  <div class="container">
+	<div class="row">
+	  <div class="grid_12"> 
+		<h2>Contacts</h2>
+		<div class="footer_phone">+234 (807) 761 2311</div>
+		<a href="mailto:info@attractivepixel.com" target="_blank" class="footer_mail">info@attractivepixel.com</a>
+	  </div>
+	</div>
+	  <br><p style="font-size: 20px">Copyright &copy; Attractive Pixel Inc. 2017</p>
+  </div>  
+</footer>
+<a href="#top" id="toTop" class="fa fa-chevron-up"></a>
+</body>
+</html>
+

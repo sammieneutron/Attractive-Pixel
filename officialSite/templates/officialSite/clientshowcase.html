@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Client Showcase | Attractive Pixel</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Attractive Pixel Official Webpage">
+<meta name="author" content="Attractive Pixel Inc. ICT Department">
+
+{% load staticfiles %}
+
+<link rel="icon" href="{% static 'officialSite/images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'officialSite/images/favicon.ico' %}" />
+<link href="{% static 'officialSite/images/atitleicon.png' %}" size="16x16" rel="icon" type="image/png">
+<link rel="stylesheet" href="{% static 'officialSite/css/style.css' %}">
+
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+<script src="{% static 'officialSite/js/jquery.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'officialSite/js/script.js' %}"></script>
+<script src="{% static 'officialSite/js/superfish.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'officialSite/js/tmStickUp.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.ui.totop.js' %}"></script>
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+
+</script>
+
+  <link rel="stylesheet" href="{% static 'officialSite/css/table.css' %}">
+
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="{% static 'officialSite/js/html5shiv.js' %}"></script>
+<link rel="stylesheet" media="screen" href="{% static 'officialSite/css/ie.css' %}">
+<![endif]-->
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+  <section id="stuck_container" style="background-color: white; opacity: 0.9">
+  <!--==============================
+        Stuck menu
+  =================================-->
+  <div class="container" >
+    <div class="row">
+    <div class="grid_12 " style="">
+      <h1 class="logo">
+      <a href="{% url 'officialSite:index' %}">
+        <img src="{% static 'officialSite/images/pnglogo.png' %}" alt="company logo" style="">
+      </a>
+      </h1>
+      <div class="navigation" style="">
+      <nav>
+        <ul class="sf-menu">
+         <li class=""><a href="{% url 'officialSite:index' %}">Home</a></li>
+         <li><a href="{% url 'officialSite:about' %}">About</a></li>
+         <li><a href="{% url 'officialSite:gallery' %}">Gallery</a></li>
+         <li class="current"><a href="{% url 'officialSite:clientshowcase' %}">Client Showcase</a></li>
+         <li><a href="{% url 'officialSite:contacts' %}">Contacts</a></li>
+       </ul>
+      </nav>
+      <div class="clear"></div>
+      </div>       
+     <div class="clear"></div>  
+    </div>
+   </div> 
+  </div> 
+  </section>
+</header>
+<!--=====================
+          Content
+======================-->
+<section id="content" style="background-color: #f4f4f4"><div class="ic"></div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_8">
+        <h2>Client Showcase</h2>
+
+        {% for client in clientshowcase %}
+        <div class="blog">
+          <a href="{{MEDIA_URL}}{{client.modal_photos}}" class="gall_item"><img src="{{MEDIA_URL}}{{client.photo}}" alt="" class="img_inner"><span></span></a>
+          <div class="text1 color1"><a href="#">{{client.title}}</a></div>
+          <p>{{client.details}}</p>
+          <br>
+          <a href="{% url 'officialSite:clients' %}" target="_blank" class="btn">more</a>
+
+            <div class="table-responsive">
+              <table class="table">
+                  <tbody>
+                    <tr>
+                      <td style=""><time datetime="2014-01-01">
+                        <span class="fa fa-calendar"></span>
+                        {{client.date_created}}
+                      </time> </td>
+                      <!--<td><a href="#"><div class="fa fa-user"></div> Admin</a></td>-->
+                      <td><a href="{{client.client_website}}" target="_blank"><span class="fa fa-link"></span>Click to view website</a></td>
+                    </tr>
+                    <tr>
+                      <td><div class="fa fa-bookmark"></div> {{client.category}}  </td>
+                      <td colspan="2"><div class="fa fa-tag"></div>{{client.tag_id}}</td>
+                    </tr>
+                    <tr>
+                      <td><div class="fa fa-comments"></div>{{client.comments}}</td>
+                      <td colspan="2"><div class="fa fa-eye"></div>{{client.number_of_views}}
+                        <div class="fa fa-thumbs-up"></div>{{client.number_of_likes}}
+                      <div class="fa fa-thumbs-down"></div>{{client.number_of_dislikes}}</td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+        </div>
+        {% endfor %}
+          {% if clientshowcase.has_previous %}
+              <a href="?page={{clientshowcase.previous_page_number}}" class="btn">prev page</a>
+          {% endif %}
+          {% if clientshowcase.has_next %}
+              <a href="?page={{clientshowcase.next_page_number}}" class="btn" style="float: right">next page</a>
+          {% endif %}
+      </div>
+      <div class="grid_4">
+        <h2>Categories</h2>
+        <ul class="list-1">
+          <li data-toggle="collapse" data-target="#demo"><span></span><a href="#"><div class="fa fa-chevron-right"></div>Institutions</a></li>
+          <li><span></span><a href="#"><div class="fa fa-chevron-right"></div>Churches </a></li>
+          <li><span></span><a href="#"><div class="fa fa-chevron-right"></div>Organizations </a></li>
+          <li><span></span><a href="#"><div class="fa fa-chevron-right"></div>Celebrities </a></li>
+          <li><span></span><a href="#"><div class="fa fa-chevron-right"></div>Schools </a></li>
+          <li><span></span><a href="#"><div class="fa fa-chevron-right"></div>Hospitals </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer" style="background-color: rgb(12, 12, 12)">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <h2>Contacts</h2>
+        <div class="footer_phone">+234 (807) 761 2311</div>
+        <a href="mailto:info@attractivepixel.com" target="_blank" class="footer_mail">info@attractivepixel.com</a>
+        <!--<div class="sub-copy">Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>-->
+      </div>
+    </div>
+      
+    <br><p style="font-size: 20px">Copyright &copy; Attractive Pixel Inc. 2017</p>
+  </div>  
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+</body>
+</html>
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About | Attractive Pixel</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Attractive Pixel Official Webpage">
+<meta name="author" content="Samson Samuels">
+
+{% load staticfiles %}
+
+<link rel="icon" href="{% static 'officialSite/images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'officialSite/images/favicon.ico' %}" />
+<link href="{% static 'officialSite/images/atitleicon.png' %}" size="16x16" rel="icon" type="image/png">
+<link rel="stylesheet" href="{% static 'officialSite/css/style.css' %}">
+
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+<script src="{% static 'officialSite/js/jquery.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'officialSite/js/script.js' %}"></script>
+<script src="{% static 'officialSite/js/superfish.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'officialSite/js/tmStickUp.js' %}"></script>
+<script src="{% static 'officialSite/js/jquery.ui.totop.js' %}"></script>
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="{% static 'officialSite/js/html5shiv.js' %}"></script>
+<link rel="stylesheet" media="screen" href="{% static 'officialSite/css/ie.css' %}">
+<![endif]-->
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+  <!-- <div class="header_top"> -->
+  <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--<div class="grid_12">-->
+<!--&lt;!&ndash;            <img src="images/LOGO.png" alt="logo" style="width: 30%; padding-top: 2%;">&ndash;&gt;-->
+<!--&lt;!&ndash;      <h1><a href="#">Attractive Pixel <br></a></h1>&ndash;&gt;-->
+<!--&lt;!&ndash;      Freezing Moments...&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!-- </div> -->
+  <section id="stuck_container" style="background-color: white; opacity: 0.9">
+  <!--==============================
+        Stuck menu
+  =================================-->
+  <div class="container">
+    <div class="row">
+    <div class="grid_12 " style="">
+      <h1 class="logo">
+      <a href="{% url 'officialSite:index' %}">
+        <img src="{% static 'officialSite/images/pnglogo.png' %}" alt="company logo" style="">
+      </a>
+      </h1>
+      <div class="navigation" style="">
+      <nav>
+        <ul class="sf-menu">
+         <li class=""><a href="{% url 'officialSite:index' %}">Home</a></li>
+         <li class="current"><a href="{% url 'officialSite:about' %}">About</a></li>
+         <li><a href="{% url 'officialSite:gallery' %}">Gallery</a></li>
+         <li><a href="{% url 'officialSite:clientshowcase' %}">Client Showcase</a></li>
+         <li><a href="{% url 'officialSite:contacts' %}">Contacts</a></li>
+       </ul>
+      </nav>
+      <div class="clear"></div>
+      </div>       
+     <div class="clear"></div>  
+    </div>
+   </div> 
+  </div> 
+  </section>
+</header>
+<!--=====================
+          Content
+======================-->
+<section id="content"  style="background-color: #f4f4f4"><div class="ic"></div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h2>My Biography and Experience</h2>
+          <img src="{% static 'officialSite/images/img/bio-mid.jpg' %}" alt="" class="img_inner fleft">
+          <p>Attractive Pixel Inc. was founded in August, 2016 by Samson
+		  Samuels, a Computer Science & Education graduate of University of Nigeria, Nsukka.
+		  He is someone who is crazily interested in computers and technology and has vowed to be part of the future
+		  software developers in which has led him into programming and web developing.</p>
+          <p>Growing up, Samson was told a story by his parent that in his early age, he hates photographs because the sudden flashlights do scare him alot, so whenever it happens he wants to be photographed, he has to be decieved with chocolates so he can stand still and stable to take photos.</p>
+          <p>During his university days, while he was pondering, he asked himself on what to embark on careerly, then, his inner-self asked him this question, "WHAT HAVE YOU FOUND YOUSELF DOING SINCE THESE YEARS ?". While searching his PC, he came to realize that he has so many photos of himself, friends, family, people around him, natures and the likes. Nothing less than 5,000 pictures he's taken consciously or unconsciously. This really ignited and boosted his passion for photography, then he realized how important a picture is in one's life.</p>
+          <img src="{% static 'officialSite/images/page2_img2.jpg' %}" alt="" class="img_inner img_fright">
+        <p>He got so many motivating words from his dad who he looked up to as a mentor because that was his dad's profession for more than 20 years when he was in his youth days in which he won so many awards.</p>
+        <p>Samson said, "I have big dreams about photography, I wanna be part of the people who will take photography to a level that has never been imagined nor comprehended. I believe in myself that I can make it".</p>
+          <p>Photographs is not just about printed images on a hard paper or whatsoever, it's far beyond that!!!. Photographs brings life, speaks life, reminds you of the beautiful moments you've had, it reminds you of who you've been and who you are.</p>
+          <p>"If you can dream it, gather useful knowledge about it, pray about it, then you can achieve it." - Samson Samuels</p>
+      </div>
+    </div>
+  </div>
+  <!--<div class="sep-1 offset__1"></div>-->
+  <!--<div class="container">-->
+    <!--<div class="row">-->
+      <!--<div class="grid_12">-->
+        <!--<h3>My Recent  Awards</h3>-->
+      <!--</div>-->
+      <!--<div class="grid_3">-->
+        <!--<div class="block-1">-->
+          <!--<div class="fa fa-image"></div>-->
+          <!--<div class="block-1_title">Photographer of the year</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit-->
+          <!--<br>-->
+          <!--<a href="#" class="btn">more</a>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="grid_3">-->
+        <!--<div class="block-1">-->
+          <!--<div class="fa fa-trophy"></div>-->
+          <!--<div class="block-1_title">Kiam nibh anteli</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit-->
+          <!--<br>-->
+          <!--<a href="#" class="btn">more</a>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="grid_3">-->
+        <!--<div class="block-1">-->
+          <!--<div class="fa fa-star"></div>-->
+          <!--<div class="block-1_title">Nomilonibh anter</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit-->
+          <!--<br>-->
+          <!--<a href="#" class="btn">more</a>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="grid_3">-->
+        <!--<div class="block-1">-->
+          <!--<div class="fa fa-camera"></div>-->
+          <!--<div class="block-1_title">Moliuam nibh anteg</div>Dorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut velit-->
+          <!--<br>-->
+          <!--<a href="#" class="btn">more</a>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer" style="background-color: rgb(12, 12, 12)">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <h2>Contacts</h2>
+        <div class="footer_phone">+234 (807) 761 2311</div>
+        <a href="mailto:info@attractivepixel.com" target="_blank" class="footer_mail">info@attractivepixel.com</a>
+        <!--<div class="sub-copy">Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>-->
+      </div>
+    </div>
+    <br><p style="font-size: 20px">Copyright &copy; Attractive Pixel Inc. 2017</p>
+  </div>
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+</body>
+</html>
+
